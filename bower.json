@@ -1,0 +1,23 @@
+{
+  "name": "NimbleTrip",
+  "homepage": "https://github.com/kiranbose/NimbleTrip",
+  "authors": [
+    "Kiran <kiranbose@gmail.com>"
+  ],
+  "description": "Nimble Trip travel destinations website",
+  "main": "",
+  "moduleType": [],
+  "license": "NimbleTrip",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "angular": "~1.4.8"
+  },
+  "devDependencies": {}
+}
