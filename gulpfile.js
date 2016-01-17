@@ -27,7 +27,7 @@ var gulp = require('gulp'),
 
 gulp.task('scripts',function(){
     console.log('scipts gulp task running');
-    gulp.src(['app/js/**/*.js','!app/js/**/*.min.js'])
+    gulp.src(['app/js/**/*.js','app/src/**/*.js','!app/js/**/*.min.js','!app/js/**/app.js','!app/js/**/vendor.js'])
         .pipe(concat('app.js'))
         .pipe(gulp.dest(gulpPaths.app + 'js'))
         .pipe(rename({suffix: '.min'}))
@@ -47,7 +47,7 @@ gulp.task('vendor', function () {
     gulp.src([
             gulpPaths.bc + 'jquery/dist/jquery.js',
             gulpPaths.bc + 'angular/angular.js',
-            gulpPaths.bc + 'bootstrap/dist/js/bootstrap.min.js',
+            gulpPaths.bc + 'bootstrap/dist/js/bootstrap.js',
             gulpPaths.bc + 'angularjs-toaster/toaster.js',
             gulpPaths.bc + 'angular-bootstrap/ui-bootstrap-tpls.min.js',
             gulpPaths.bc + 'angular-aria/angular-aria.js',
@@ -79,14 +79,15 @@ gulp.task('compass',function(){
 });
 
 
+
 // ///////////////////////////////////////////////////////////////////
 //  HTML Task
 // ///////////////////////////////////////////////////////////////////
-
-gulp.task('html',function(){
-    gulp.src('app/**/*.html')
-        .pipe(reload({stream:true}));
-});
+//
+//gulp.task('html',function(){
+//    gulp.src('app/**/*.html')
+//        .pipe(reload({stream:true}));
+//});
 
 // ///////////////////////////////////////////////////////////////////
 //  Build Task
@@ -104,11 +105,12 @@ gulp.task('build:copy',['build:cleanfolder'],function(){
         .pipe(gulp.dest('build/'));
 });
 
+//before building check index.html for reference to app.js
 gulp.task('build:remove',['build:copy'],function(cb){
     del([
         'build/scss/',
         'build/js/**/!(*.min.js)',
-        'build/src/'
+        'build/src/**/*.js'
     ],cb);
 });
 
@@ -144,9 +146,10 @@ gulp.task('build:server',function(){
 
 gulp.task('watch',function(){
     gulp.watch(['app/js/**/*.js',
+        'app/src/**/*.js',
         'app/scss/**/*.scss',
-        'app/css/**/*.css',
-        'app/**/*.html'],['scripts','compass','html']);
+        //'app/css/**/*.css',
+        ],['scripts','compass']);
 });
 
 
@@ -154,4 +157,4 @@ gulp.task('watch',function(){
 //  Default Task
 // ///////////////////////////////////////////////////////////////////
 
-gulp.task('default',['scripts','compass','html','browser-sync','watch']);
+gulp.task('default',['scripts','compass','browser-sync','watch']);

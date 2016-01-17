@@ -1,8 +1,186 @@
+//*******************************Variables***********************
+$font-stack:    Segoe UI;
+$primary-text: black;
+$primary-nav-text: dodgerblue;
+$nav-underline-color: dodgerblue;
+$nt-basic: deepskyblue;
+$nt-basic-dark: darkblue;
+$nt-basic-light: lightskyblue;
+//***************************************************************
 
 .maindiv{
   height: 200px;
   width:900px;
-  background-color: blue;
+  background-color: $nt-basic;
   border:1px dotted gray;
   border-radius: 5px;
 }
+html, body {
+  font-family: $font-stack;
+  height: 4000px;
+}
+
+
+
+#body_div {
+  height: 200px;
+  background-color: white;
+  margin-top: 30px;
+}
+
+#banner {
+  width: 100%;
+  height: 60px;
+}
+
+.brand_logo{
+  height:50px;
+}
+.brand_logo_min{
+  height:50px;
+  position: absolute;
+}
+#brand_logo_minimized{
+  transition: .3s ease-in-out;
+}
+.nav_links {
+  margin: 0;
+}
+
+.nav_links li {
+  display: inline-block;
+  margin-top: 4px;
+}
+.nav_links li a {
+  padding: 0 15.5px;
+  color: #3498db;
+  text-decoration: none;
+}
+#ntCarousel img{
+  height: 300px;
+  width: 100%;
+}
+//******************NAVBAR**************************
+.ntnavbar {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  border: transparent;
+  transition: .3s ease-in-out;
+}
+.ntnavbar-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  //transition: .3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  #floatingline{
+    visibility: visible !important;
+  }
+  #selectedMenu{
+    font-family: $font-stack;
+    font-weight: bold;
+    color: $primary-nav-text;
+    display: inline-block;
+    width: 10%;
+    padding: .75rem 0;
+    margin: 0;
+    text-decoration: none;
+    visibility: hidden !important;
+  }
+}
+
+.ntnavbar ul li {
+  display: inline;
+  text-align: center;
+  cursor: pointer;
+}
+
+#menuButton{
+  color: $nt-basic-light;
+}
+
+
+@media (max-width: 768px) {
+  #floatingline{
+    visibility: hidden !important;
+  }
+  .ntnavbar ul li {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+#selectedMenu{
+  font-family: $font-stack;
+  font-weight: bold;
+  color: $primary-nav-text;
+  display: inline-block;
+  width: 10%;
+  padding: .75rem 0;
+  margin: 0;
+  text-decoration: none;
+  visibility: visible;
+}
+
+.ntnavbar ul li span{
+  font-family: $font-stack;
+  font-weight: bold;
+  color: $primary-nav-text;
+  display: inline-block;
+  width: 10%;
+  padding: .75rem 0;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.nt-margin-left-30{
+  margin-left: 30% !important;
+}
+.nt-margin-left-40{
+  margin-left: 40% !important;
+}
+.nt-margin-left-50{
+  margin-left: 50% !important;
+}
+.nt-margin-left-60{
+  margin-left: 60% !important;
+}
+
+.item1:hover ~ hr{
+  @extend .nt-margin-left-30;
+}
+
+.item2:hover ~ hr {
+  @extend .nt-margin-left-40;
+}
+
+.item3:hover ~ hr {
+  @extend .nt-margin-left-50;
+}
+
+.item4:hover ~ hr {
+  @extend .nt-margin-left-60;
+}
+
+.ntnavbar hr {
+  height: .25rem;
+  width: 10%;
+  margin: 0;
+  background: $nav-underline-color;
+  border: none;
+  transition: .3s ease-in-out;
+  margin-left: 30%;
+}
+
+.goldline{
+  height: 1px;
+  width:100%;
+  background-color: $nav-underline-color;
+}
+///*********************NAVBAR END*************************/
