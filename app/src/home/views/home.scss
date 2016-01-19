@@ -1,0 +1,143 @@
+.bestoffersdiv {
+  h4 {
+    color: gray;
+  }
+
+  .panel {
+    color: #666666;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+    transition: 0.5s box-shadow;
+  }
+  .panel:hover {
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+  }
+  .panel .panel-heading {
+    background-color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    color: #262626;
+    border-color: #ffffff;
+  }
+  .panel .panel-heading a {
+    font-weight: 400;
+    font-size: 11px;
+  }
+  .panel .panel-default {
+    border-color: #cccccc;
+  }
+  .panel .img-circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .panel-body {
+    display: inline;
+    .offername {
+      font-weight: bold;
+      text-overflow: ellipsis;
+      font-size: large;
+    }
+    .offercost {
+      font-size: large;
+      color: $nt-basic;
+    }
+  }
+
+  .panel .panel-thumbnail {
+    padding: 0;
+  }
+
+  .list-group-item:first-child, .list-group-item:last-child {
+    border-radius: 0;
+  }
+
+  .thumbnail {
+    margin-bottom: 1px !important;
+  }
+}
+//****************************SERVICES************
+.ourservicesdiv{
+  background: rgba(121,14,129,1);
+  background: -moz-linear-gradient(top, rgba(121,14,129,1) 0%, rgba(148,49,155,1) 32%, rgba(149,63,158,1) 53%, rgba(138,42,146,1) 74%, rgba(121,14,129,1) 100%);
+  //background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(121,14,129,1)), color-stop(32%, rgba(148,49,155,1)), color-stop(53%, rgba(149,63,158,1)), color-stop(74%, rgba(138,42,146,1)), color-stop(100%, rgba(121,14,129,1)));
+  background: -webkit-linear-gradient(top, rgba(121,14,129,1) 0%, rgba(148,49,155,1) 32%, rgba(149,63,158,1) 53%, rgba(138,42,146,1) 74%, rgba(121,14,129,1) 100%);
+  background: -o-linear-gradient(top, rgba(121,14,129,1) 0%, rgba(148,49,155,1) 32%, rgba(149,63,158,1) 53%, rgba(138,42,146,1) 74%, rgba(121,14,129,1) 100%);
+  background: -ms-linear-gradient(top, rgba(121,14,129,1) 0%, rgba(148,49,155,1) 32%, rgba(149,63,158,1) 53%, rgba(138,42,146,1) 74%, rgba(121,14,129,1) 100%);
+  background: linear-gradient(to bottom, rgba(121,14,129,1) 0%, rgba(148,49,155,1) 32%, rgba(149,63,158,1) 53%, rgba(138,42,146,1) 74%, rgba(121,14,129,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#790e81', endColorstr='#790e81', GradientType=0 );
+  h3{
+    color: white;
+  }
+  h5{
+    color: white;
+    font-weight: lighter;
+  }
+
+  .panel{
+    background-color: transparent !important;
+  }
+
+  .panel-body{
+    background-color: transparent !important;
+    i{
+      color:white;
+      font-size: 100px;
+    }
+    h3{
+      color: white;
+    }
+    hr{
+      width:50%;
+    }
+    p{
+      color:white;
+      font-size: small;
+      font-weight: lighter;
+    }
+  }
+
+}
+
+//****************************International Packages************
+.inernationalpackagesdiv{
+  background: rgba(6,116,102,1);
+  background: -moz-linear-gradient(top, rgba(6,116,102,1) 0%, rgba(15,158,137,1) 23%, rgba(17,172,151,1) 38%, rgba(17,172,151,1) 59%, rgba(20,163,142,1) 79%, rgba(6,116,102,1) 100%);
+  //background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(6,116,102,1)), color-stop(23%, rgba(15,158,137,1)), color-stop(38%, rgba(17,172,151,1)), color-stop(59%, rgba(17,172,151,1)), color-stop(79%, rgba(20,163,142,1)), color-stop(100%, rgba(6,116,102,1)));
+  background: -webkit-linear-gradient(top, rgba(6,116,102,1) 0%, rgba(15,158,137,1) 23%, rgba(17,172,151,1) 38%, rgba(17,172,151,1) 59%, rgba(20,163,142,1) 79%, rgba(6,116,102,1) 100%);
+  background: -o-linear-gradient(top, rgba(6,116,102,1) 0%, rgba(15,158,137,1) 23%, rgba(17,172,151,1) 38%, rgba(17,172,151,1) 59%, rgba(20,163,142,1) 79%, rgba(6,116,102,1) 100%);
+  background: -ms-linear-gradient(top, rgba(6,116,102,1) 0%, rgba(15,158,137,1) 23%, rgba(17,172,151,1) 38%, rgba(17,172,151,1) 59%, rgba(20,163,142,1) 79%, rgba(6,116,102,1) 100%);
+  background: linear-gradient(to bottom, rgba(6,116,102,1) 0%, rgba(15,158,137,1) 23%, rgba(17,172,151,1) 38%, rgba(17,172,151,1) 59%, rgba(20,163,142,1) 79%, rgba(6,116,102,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#067466', endColorstr='#067466', GradientType=0 );
+
+  h3{
+    color: white;
+  }
+  h5{
+    color: white;
+    font-weight: lighter;
+  }
+
+}
+
+
+//****************************Domestic Packages************
+.domesticpackagesdiv{
+  background: rgba(171,7,95,1);
+  background: -moz-linear-gradient(top, rgba(171,7,95,1) 0%, rgba(219,0,120,1) 21%, rgba(235,38,146,1) 32%, rgba(255,31,154,1) 45%, rgba(255,20,153,1) 60%, rgba(240,22,142,1) 73%, rgba(171,7,95,1) 100%);
+  //background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(171,7,95,1)), color-stop(21%, rgba(219,0,120,1)), color-stop(32%, rgba(235,38,146,1)), color-stop(45%, rgba(255,31,154,1)), color-stop(60%, rgba(255,20,153,1)), color-stop(73%, rgba(240,22,142,1)), color-stop(100%, rgba(171,7,95,1)));
+  background: -webkit-linear-gradient(top, rgba(171,7,95,1) 0%, rgba(219,0,120,1) 21%, rgba(235,38,146,1) 32%, rgba(255,31,154,1) 45%, rgba(255,20,153,1) 60%, rgba(240,22,142,1) 73%, rgba(171,7,95,1) 100%);
+  background: -o-linear-gradient(top, rgba(171,7,95,1) 0%, rgba(219,0,120,1) 21%, rgba(235,38,146,1) 32%, rgba(255,31,154,1) 45%, rgba(255,20,153,1) 60%, rgba(240,22,142,1) 73%, rgba(171,7,95,1) 100%);
+  background: -ms-linear-gradient(top, rgba(171,7,95,1) 0%, rgba(219,0,120,1) 21%, rgba(235,38,146,1) 32%, rgba(255,31,154,1) 45%, rgba(255,20,153,1) 60%, rgba(240,22,142,1) 73%, rgba(171,7,95,1) 100%);
+  background: linear-gradient(to bottom, rgba(171,7,95,1) 0%, rgba(219,0,120,1) 21%, rgba(235,38,146,1) 32%, rgba(255,31,154,1) 45%, rgba(255,20,153,1) 60%, rgba(240,22,142,1) 73%, rgba(171,7,95,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab075f', endColorstr='#ab075f', GradientType=0 );
+  h3{
+    color: white;
+  }
+  h5{
+    color: white;
+    font-weight: lighter;
+  }
+}

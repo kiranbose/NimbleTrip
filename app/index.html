@@ -4,12 +4,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="http://cdnjs.cloudflare.com/ajax/libs/es5-shim/2.2.0/es5-shim.js"></script>
-    <title>APP</title>
+    <title>NimbleTrip</title>
 
 </head>
 <body layout="row">
@@ -80,34 +79,23 @@
         </div>
 
 
-    <div id="myNavbar" class="navbar-collapse">
+    <div id="myNavbar" class="navbar-collapse collapse" aria-expanded="false">
         <ul class="nav navbar-collapse">
             <li class="item1" ui-sref="home"><span href="#">HOME</span></li><!--
          --><li class="item2" ui-sref="services"><span href="#">SERVICES</span></li><!--
          --><li class="item3" ui-sref="packages"><span href="#">PACKAGES</span></li><!--
          --><li class="item4" ui-sref="about"><span href="#">ABOUT</span></li>
             <hr id="floatingline"/>
-            <div class="container-fluid goldline"></div>
+
         </ul>
-    </div>
-    </div>
 
-
+    </div>
+        <div class="container-fluid blueline"></div>
+    </div>
 
     </nav>
 
-<div class="container text-center" ui-view></div>
-
-<div class="container text-center" id='body_div'>
-    <p style='margin: 0; padding-top: 50px;'>and more stuff to continue scrolling here</p>
-</div>
-
-<div class="maindiv container">
-    <span>Hello JS</span>
-    <p id="testtext">test text</p>
-    <p id="demo" onclick="myFunction()">Click me to change my HTML content (innerHTML).</p>
-
-</div>
+<div class=" text-center" ui-view></div>
 
 
 <script type="text/javascript" src="js/vendor.min.js" defer></script>

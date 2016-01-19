@@ -1,12 +1,19 @@
+
 //*******************************Variables***********************
 $font-stack:    Segoe UI;
 $primary-text: black;
 $primary-nav-text: dodgerblue;
 $nav-underline-color: dodgerblue;
-$nt-basic: deepskyblue;
+$nt-basic: dodgerblue;
 $nt-basic-dark: darkblue;
 $nt-basic-light: lightskyblue;
 //***************************************************************
+
+//*******************************imports***********************
+@import '../src/home/views/home.scss';
+
+//***************************************************************
+
 
 .maindiv{
   height: 200px;
@@ -100,7 +107,14 @@ html, body {
 }
 
 #menuButton{
-  color: $nt-basic-light;
+  border: 1px solid $nt-basic;
+  background-color: transparent;
+  span{
+    background-color: $nt-basic;
+  }
+}
+#menuButton:hover{
+  background-color: $nt-basic-light;
 }
 
 
@@ -178,7 +192,7 @@ html, body {
   margin-left: 30%;
 }
 
-.goldline{
+.blueline{
   height: 1px;
   width:100%;
   background-color: $nav-underline-color;

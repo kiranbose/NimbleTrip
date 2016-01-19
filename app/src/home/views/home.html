@@ -1,5 +1,140 @@
-<div>
-    Home page
-    <span>{{pageData}}</span>
+<style>
+
+</style>
+
+<div class="container text-center bestoffersdiv">
+
+    <h3>Best Offers</h3>
+    <h4>Grab the hottest deals on our hand curated india tours</h4>
+    <br><br>
+    <div class="container-fluid bestoffercontainer">
+        <div ng-repeat="offer in bestOffers" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="panel panel-default">
+                <div class="panel-thumbnail thumbnail text-center"><img style="height: 150px;" ng-src="{{offer.imgSrc}}" class="img-responsive"></div>
+                <div class="panel-body">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="text-align: left;padding-left: 2%;">
+                                <p class="offername">{{offer.offerName}}</p>
+                            </td>
+                            <td style="text-align: right;padding-right: 2%;">
+                                <p class="offercost">{{offer.cost}}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left;padding-left: 2%;">
+                                <p>{{offer.stay}}</p>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>
+        </div><!--/col-->
+    </div>
+</div>
+<br><br><br>
+
+<div class="container-fluid ourservicesdiv">
+    <div class="container" >
+        <br>
+        <h3>Our Services</h3>
+        <hr>
+        <h5>Nimbletrip offers ticket booking at the best available price,Organize tours and provide travel assistance to our customers</h5>
+        <br>
+        <div ng-repeat="service in ourServices" class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="panel-body">
+                    <i class="material-icons">{{service.icon}}</i>
+                    <h3>{{service.serviceName}}</h3>
+                    <hr>
+                    <p >{{service.text}}</p>
+                </div>
+            </div>
+        </div>
+    <br><br><br>
+    </div>
+
+<div class="container-fluid inernationalpackagesdiv">
+    <div class="container" >
+        <br>
+        <h3>International Packages</h3>
+        <hr>
+        <h5>Choose from our wide range of international packages</h5>
+        <br>
+
+
+        <div class="container-fluid bestoffercontainer">
+            <div ng-repeat="offer in bestOffers" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail thumbnail text-center"><img style="height: 150px;" ng-src="{{offer.imgSrc}}" class="img-responsive"></div>
+                    <div class="panel-body">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td style="text-align: left;padding-left: 2%;">
+                                    <p class="offername">{{offer.offerName}}</p>
+                                </td>
+                                <td style="text-align: right;padding-right: 2%;">
+                                    <p class="offercost">{{offer.cost}}</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;padding-left: 2%;">
+                                    <p>{{offer.stay}}</p>
+                                </td>
+                            </tr>
+                        </table>
+
+
+                    </div>
+                </div>
+            </div><!--/col-->
+        </div>
+
+    </div>
+    <br><br><br>
+</div>
+
+<div class="container-fluid domesticpackagesdiv">
+    <div class="container" >
+        <br>
+        <h3>Domestic Packages</h3>
+        <hr>
+        <h5>Choose from our wide range of domestic packages</h5>
+        <br>
+
+
+        <div class="container-fluid bestoffercontainer">
+            <div ng-repeat="offer in bestOffers" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-thumbnail thumbnail text-center"><img style="height: 150px;" ng-src="{{offer.imgSrc}}" class="img-responsive"></div>
+                    <div class="panel-body">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td style="text-align: left;padding-left: 2%;">
+                                    <p class="offername">{{offer.offerName}}</p>
+                                </td>
+                                <td style="text-align: right;padding-right: 2%;">
+                                    <p class="offercost">{{offer.cost}}</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;padding-left: 2%;">
+                                    <p>{{offer.stay}}</p>
+                                </td>
+                            </tr>
+                        </table>
+
+
+                    </div>
+                </div>
+            </div><!--/col-->
+        </div>
+
+    </div>
+    <br><br><br>
+</div>
+
+
 
 </div>
